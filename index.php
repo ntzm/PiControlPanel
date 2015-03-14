@@ -1,5 +1,5 @@
 <?php
-include 'pi.php';
+include_once('pi.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
