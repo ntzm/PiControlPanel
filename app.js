@@ -1,3 +1,6 @@
+Chart.defaults.global.responsive = true;
+Chart.defaults.global.animation  = false;
+
 var pi = {
     uptime: new Date(0),
 
@@ -33,8 +36,6 @@ var pi = {
             ]
         },
         {
-            responsive: true,
-            animationSteps: 10,
             scaleOverride: true,
             scaleSteps: 6,
             scaleStepWidth: 5,
