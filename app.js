@@ -39,7 +39,7 @@ var pi = {
         },
         {
             scaleOverride:   true,
-            scaleSteps:      6,
+            scaleSteps:      10,
             scaleStepWidth:  5,
             scaleStartValue: 20
         });
