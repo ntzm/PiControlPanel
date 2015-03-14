@@ -113,7 +113,7 @@ var pi = {
 $(document).ready(function() {
 
     // Makes the charts look OK on mobile. Not perfect and could do with a
-    // better solutoin
+    // better solution
     if (screen.width >= 992 && screen.width <= 1200) {
         $('canvas').attr('height', '150');
     } else if (screen.width >= 1200) {
