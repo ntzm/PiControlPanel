@@ -5,7 +5,7 @@ include_once('pi.php');
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Pi Control Centre</title>
+    <title>Pi Control Panel</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
@@ -13,11 +13,15 @@ include_once('pi.php');
 </head>
 <body>
     <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/"><i class="fa fa-dashboard"></i> Pi Control Centre</a>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">
+                        <i class="fa fa-dashboard"></i> Pi Control Panel
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
 
     <div class="container">
