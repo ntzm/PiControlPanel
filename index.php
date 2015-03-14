@@ -56,6 +56,11 @@ include_once('pi.php');
             <span class="label label-success">CPU</span>
             <canvas id="chart-temps" width="500" height="250"></canvas>
         </div>
+
+        <div class="col-md-12">
+            <h2><i class="fa fa-area-chart"></i> CPU Usage (%)</h2>
+            <canvas id="chart-cpu" width="500" height="250"></canvas>
+        </div>
     </div>
 
     <div class="modal fade" id="modal-shutdown" tabindex="-1" role="dialog">
