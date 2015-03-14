@@ -9,6 +9,10 @@ switch ($_GET['cmd']) {
         $return = Pi::getTemps();
         break;
 
+    case 'cpu':
+        $return = Pi::getCPUUsage();
+        break;
+
     case 'hostname':
         $return = Pi::getHostname();
         break;

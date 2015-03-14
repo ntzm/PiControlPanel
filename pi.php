@@ -18,6 +18,16 @@ class Pi
     }
 
     /**
+     * Get the CPU usage as a percentage
+     *
+     * @return float
+     */
+    public function getCPUUsage()
+    {
+        return (float)exec('top -d 0.5 -b -n2 | grep "Cpu(s)"|tail -n 1 | awk \'{print $2 + $4}\'');
+    }
+
+    /**
      * Get the hostname
      *
      * @return string
