@@ -1,5 +1,5 @@
 var pi = {
-    uptime: new Date(),
+    uptime: new Date(0),
 
     init: function() {
         this.getUptime();
