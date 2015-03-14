@@ -5,23 +5,23 @@ var pi = {
     uptime: new Date(0),
 
     CPULine: {
-        label: 'CPU',
-        fillColor: 'rgba(0, 188, 140, 0)',
-        strokeColor: 'rgba(0, 188, 140, 1)',
-        pointColor: 'rgba(0, 188, 140, 1)',
-        pointStrokeColor: 'rgba(0, 188, 140, 1)',
-        pointHighlightFill: 'rgba(0, 188, 140, 1)',
+        label:                'CPU',
+        fillColor:            'rgba(0, 188, 140, 0)',
+        strokeColor:          'rgba(0, 188, 140, 1)',
+        pointColor:           'rgba(0, 188, 140, 1)',
+        pointStrokeColor:     'rgba(0, 188, 140, 1)',
+        pointHighlightFill:   'rgba(0, 188, 140, 1)',
         pointHighlightStroke: 'rgba(0, 188, 140, 1)',
         data: []
     },
 
     GPULine: {
-        label: 'GPU',
-        fillColor: 'rgba(55, 90, 127, 0)',
-        strokeColor: 'rgba(55, 90, 127, 1)',
-        pointColor: 'rgba(55, 90, 127, 1)',
-        pointStrokeColor: 'rgba(55, 90, 127, 1)',
-        pointHighlightFill: 'rgba(55, 90, 127, 1)',
+        label:                'GPU',
+        fillColor:            'rgba(55, 90, 127, 0)',
+        strokeColor:          'rgba(55, 90, 127, 1)',
+        pointColor:           'rgba(55, 90, 127, 1)',
+        pointStrokeColor:     'rgba(55, 90, 127, 1)',
+        pointHighlightFill:   'rgba(55, 90, 127, 1)',
         pointHighlightStroke: 'rgba(55, 90, 127, 1)',
         data: []
     },
@@ -38,9 +38,9 @@ var pi = {
             datasets: [this.CPULine, this.GPULine]
         },
         {
-            scaleOverride: true,
-            scaleSteps: 6,
-            scaleStepWidth: 5,
+            scaleOverride:   true,
+            scaleSteps:      6,
+            scaleStepWidth:  5,
             scaleStartValue: 20
         });
 
@@ -66,9 +66,9 @@ var pi = {
             datasets: [this.CPULine]
         },
         {
-            scaleOverride: true,
-            scaleSteps: 10,
-            scaleStepWidth: 10,
+            scaleOverride:   true,
+            scaleSteps:      10,
+            scaleStepWidth:  10,
             scaleStartValue: 0
         });
 
@@ -111,6 +111,9 @@ var pi = {
 };
 
 $(document).ready(function() {
+
+    // Makes the charts look OK on mobile. Not perfect and could do with a
+    // better solutoin
     if (screen.width >= 992 && screen.width <= 1200) {
         $('canvas').attr('height', '150');
     } else if (screen.width >= 1200) {
