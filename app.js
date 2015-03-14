@@ -95,14 +95,6 @@ var pi = {
         });
     },
 
-    shutdown: function() {
-        $.get('run.php?cmd=shutdown');
-    },
-
-    reboot: function() {
-        $.get('run.php?cmd=reboot');
-    },
-
     updateUptime: function() {
         $('#uptime').html(
             this.uptime.getHours() + ' hours ' +
@@ -128,12 +120,4 @@ $(document).ready(function() {
     }
 
     pi.init();
-});
-
-$('#btn-shutdown').click(function() {
-    pi.shutdown();
-});
-
-$('#btn-reboot').click(function() {
-    pi.reboot();
 });

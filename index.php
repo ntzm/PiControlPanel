@@ -25,7 +25,7 @@ include_once('pi.php');
     </nav>
 
     <div class="container">
-        <div class="col-md-6">
+        <div class="col-md-12">
             <h2><i class="fa fa-info-circle"></i> System Info</h2>
             <dl>
                 <dt>Hostname</dt>
@@ -35,19 +35,6 @@ include_once('pi.php');
                 <dt>Uptime</dt>
                 <dd id="uptime"></dd>
             </dl>
-        </div>
-
-        <div class="col-md-6">
-            <h2><i class="fa fa-cog"></i> System Operations</h2>
-            <div class="btn-group">
-                <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
-                    <i class="fa fa-power-off"></i> Shut down <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#" data-toggle="modal" data-target="#modal-shutdown">Shut down</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#modal-reboot">Reboot</a></li>
-                </ul>
-            </div>
         </div>
 
         <div class="col-md-12">
@@ -60,42 +47,6 @@ include_once('pi.php');
         <div class="col-md-12">
             <h2><i class="fa fa-area-chart"></i> CPU Usage (%)</h2>
             <canvas id="chart-cpu" width="500" height="250"></canvas>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal-shutdown" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Shut down?</h4>
-                </div>
-                <div class="modal-body">
-                    <p>Are you sure you want to shut down the Pi?</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-                    <button type="button" class="btn btn-danger" id="btn-shutdown">Yes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal-reboot" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Reboot?</h4>
-                </div>
-                <div class="modal-body">
-                    <p>Are you sure you want to reboot the Pi?</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-                    <button type="button" class="btn btn-danger" id="btn-reboot">Yes</button>
-                </div>
-            </div>
         </div>
     </div>
 

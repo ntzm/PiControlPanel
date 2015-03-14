@@ -56,20 +56,4 @@ class Pi
     {
         return exec('cut -f1 -d. /proc/uptime');
     }
-
-    /**
-     * Shutdown
-     */
-    public function shutdown()
-    {
-        exec('sudo halt');
-    }
-
-    /**
-     * Reboot
-     */
-    public function reboot()
-    {
-        exec('sudo reboot');
-    }
 }

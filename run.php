@@ -25,14 +25,6 @@ switch ($_GET['cmd']) {
         $return = Pi::getUptime();
         break;
 
-    case 'shutdown':
-        Pi::shutdown();
-        break;
-
-    case 'reboot':
-        Pi::reboot();
-        break;
-
     default:
         $return = 'Invalid command';
         break;
