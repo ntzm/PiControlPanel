@@ -1,5 +1,5 @@
 <?php
-include_once('pi.php');
+include_once('../pi.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,6 +53,6 @@ include_once('pi.php');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 
-include_once('pi.php');
+include_once('../pi.php');
 
 $return;
 
