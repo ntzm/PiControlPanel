@@ -17,6 +17,7 @@ include_once('../pi.php');
             <div class="col-md-12">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="/">
@@ -45,7 +46,7 @@ include_once('../pi.php');
                 <dt>IP Address</dt>
                 <dd><?= Pi::getIPAddress() ?></dd>
                 <dt>Uptime</dt>
-                <dd id="uptime"></dd>
+                <dd id="uptime">0 days 0 minutes 0 seconds</dd>
             </dl>
         </div>
 
@@ -53,12 +54,16 @@ include_once('../pi.php');
             <h2><i class="fa fa-area-chart"></i> Temperature (&deg;C)</h2>
             <span class="label label-primary">GPU</span>
             <span class="label label-success">CPU</span>
-            <canvas id="chart-temps" width="500" height="250"></canvas>
+            <canvas id="chart-temps" width="500" height="250">
+                Sorry, Your browser is a little bit too old to display these charts! Please upgrade to a modern browser.
+            </canvas>
         </div>
 
         <div class="col-md-12">
             <h2><i class="fa fa-area-chart"></i> CPU Usage (%)</h2>
-            <canvas id="chart-cpu" width="500" height="250"></canvas>
+            <canvas id="chart-cpu" width="500" height="250">
+                Sorry, Your browser is a little bit too old to display these charts! Please upgrade to a modern browser.
+            </canvas>
         </div>
     </div>
 
