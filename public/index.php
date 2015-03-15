@@ -16,9 +16,21 @@ include_once('../pi.php');
         <div class="container">
             <div class="col-md-12">
                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
                     <a class="navbar-brand" href="/">
                         <i class="fa fa-dashboard"></i> Pi Control Panel
                     </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="https://github.com/natzim/PiControlPanel" target="_blank">
+                                <i class="fa fa-github fa-lg"></i> GitHub
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
